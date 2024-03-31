@@ -1,0 +1,40 @@
+<!--예제 5-6_자손 선택자-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Selector Basic</title>
+        <style>
+            #header > h1 { color: red; }
+            #section > h1 { color: orange; }
+
+            table > tr > th { color: red; }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1 class="title">UNKNOWN</h1>
+            <div id="nav">
+                <h1>Navigation</h1>
+            </div>
+        </div>
+        <div id="section">
+            <h1 class="title">UNKNOWN</h1>
+            <p>Don't change, let go. Be brave, be strong. But take it easy, no rush. I know you got it. Go, fail forward.
+                Go get your voice heard, don't fold. Into the UNKNOWN</p>
+        </div>
+        
+        <br><hr><br>
+        <b>*테이블 태그 요소 선택시 자손 선택자 주의사항*</b><br><br>
+
+        <table border="1">
+            <tr>
+                <th>이름</th>
+                <th>지역</th>
+            </tr>
+            <tr>
+                <td>슝슝이</td>
+                <td>서울특별시 동작구 상도동</td>
+            </tr>
+        </table>
+    </body>
+</html>
