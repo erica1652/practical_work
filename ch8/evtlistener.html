@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+        <body>
+            <input type = 'button' id = 'btnclk' value = '버튼'>
+            <script>
+                function first(){
+                    alert('첫 번째 메시지');
+                }
+                btnclk.addEventListener('click', first);
+                btnclk.addEventListener('click', function(){
+                    alert('두 번째 메시지');
+                });
+                btnclk.removeEventListener('click', first);  //삭제할 이벤트 + 등록했던 함수명 = 이벤트 핸들러 해제
+            </script>
+        </body>
+</html>
